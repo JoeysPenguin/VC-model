@@ -1,0 +1,188 @@
+/* 字体库 */
+@font-face {
+  font-family: 'iconfont';  /* project id 361397 */
+  src: url('//at.alicdn.com/t/font_nko5j6tsavewxw29.eot');
+  src: url('//at.alicdn.com/t/font_nko5j6tsavewxw29.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_nko5j6tsavewxw29.woff') format('woff'),
+  url('//at.alicdn.com/t/font_nko5j6tsavewxw29.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_nko5j6tsavewxw29.svg#iconfont') format('svg');
+}
+/* 字体库 */
+/* 样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica,iconfont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 样式重置 */
+/* 布局 */
+.wrapper {
+  margin: 20px auto;
+  width: 880px;
+  padding: 15px 5px;
+  position: relative;
+  border: 2px solid #ddd;
+  box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.10),9px 10px 20px rgba(0, 0, 0, 0.07)!important;
+}
+.layout {
+  width: 800px;
+  margin: 0 auto;
+}
+/* 布局 */
+/* 关闭按钮 */
+.close {
+  position: absolute;
+  right: 10px;
+  font-size: 30px;
+}
+.close>a {
+  text-decoration: none;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+/* 关闭按钮 */
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+/* 头像 */
+header>.avatar {
+  background-color: #000;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  font: bold 22px helvetica,iconfont;
+  position: relative;
+  border-radius: 50%;
+} 
+header>.avatar>span:first-child {
+  position: absolute;
+  top: 9px;
+  left: 44px;
+}
+header>.avatar>span:nth-child(2) {
+  position: absolute;
+  top: 39px;
+  left: 15px;
+}
+header>.avatar>span:nth-child(3) {
+  position: absolute;
+  bottom: 35px;
+  right: 14px;
+}
+header>.avatar>span:last-child {
+  position: absolute;
+  bottom: 8px;
+  right: 38px;
+  font-size: 22px
+}
+.avatar:before,
+.avatar:after {
+  content: "";
+  border: 1.5px solid #fff;
+  position: absolute;
+  top: 50px;
+  left: 15px;
+  width: 70px;
+  transform: rotate(-45deg)
+}
+.avatar:after {
+  transform: rotate(45deg)
+}
+/* 头像 */
+/* 简介 */
+header>.intro {
+  margin-left: -150px;
+}
+header>.intro>p {
+  font-size: 18px;
+}
+/* 简介 */
+/* 信息 */
+header>.contacts>h2 {
+  text-align: left;
+  margin: 5px 0;
+  margin-right:-40px;
+  padding: 5px;
+  border-bottom: 5px solid #ccc;
+}
+header>.contacts>p {
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: bold;
+}
+header>.contacts>p::first-letter {
+  font-size: 20px;
+}
+/* 信息 */
+/* header */
+/* main */
+main {
+  padding: 10px;
+}
+main h2 {
+  width: 50%;
+  margin-left: 30px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+main>dl {
+  margin: 20px 0;
+  padding-left: 50px;
+}
+main dt {
+  margin-top: 10px;
+}
+main dt>h3:before {
+  content: "\e6e0";
+  font-size: 35px;
+  vertical-align: middle;
+  margin: 0 30px 0 -66.5px
+}
+main dd {
+  border-left: 3px solid;
+  margin-left: -50px;
+  padding-left: 50px;
+  line-height: 1.5;
+}
+main span {
+  color: #666;
+  font-size: 16px;
+}
+/* main */
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+footer h2 {
+  width: 300px;
+  margin-left: 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+footer h4 {
+  padding-left: 10px;
+}
+footer .professional>h4 {
+  display: inline-block;
+  width: 200px;
+}
+footer h4:before {
+  content: "\e6e1";
+  font-size: 25px;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+/* footer */
+
+
